@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>formulaire</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<fieldset>
+	<legend>CIVILITE</legend>
+	<form method="post" action="traitement.php">
+		<p>
+			<label for="age">votre age 7 a 77</label>
+			<input  id="age" type="number" name="age" placeholder="entre votre age..." max="77" min="7" required>
+			<span>ans</span><br>
+			<input type="submit" name="ans" value="envoyer">
+		</p>
+		<p>
+			<label for="Nom">Nom :</label>
+			<input id="Nom" type="text" name="Nom" placeholder="entrez votre nom...">
+		</p>
+		<p>
+			<label for="Prenom">Prenom :</label>
+			<input  id="Prenom"type="text" name="Prenom" placeholder="entrez votre Prenom...">
+		</p>
+		<p>
+			<label for="email">e-mail :</label>
+			<input id="email" type="email" name="email" placeholder="entrez votre e-mail...">
+		</p>
+		<p>
+			Sexe :<br><label for="Homme">Homme</label>
+			<input id="Homme" type="radio" name="sexe">
+		</p>
+		<p>
+			<label for="Femme">Femme</label>
+			<input id="Femme" type="radio" name="sexe">
+		</p>
+	</form>
+</fieldset>
+<fieldset>
+		<legend>FORMATION</legend>
+	<form> 
+		<p>
+			centre d'intérêt :<br><label for="music">music</label>
+			<input id="music" type="checkbox" name="interet">
+			<label for="sport">sport</label>
+			<input id="sport" type="checkbox" name="interet">
+			<label for="interet">lecture</label>
+			<input id="interet" type="checkbox" name="interet">
+		</p>
+		<p>
+		    diplome obtenu:<select id="interet" name="diplome obtenu">
+		    <option value="interet">aucun</option>
+		 	<option value="interet">bac</option>
+		 	<option value="interet">bac2</option>
+		 	<option value="interet"selected="">bac3</option>
+		 	<option value="interet">master</option>
+		 </select>
+		 </form>
+</fieldset>
+		 <fieldset>
+		 	<legend>SECURITE</legend>
+		 	<form>
+		 		<p>
+		 		    <label for="commentaire">commentaire</label><br>
+		 		    <textarea rows="10" cols="50" id="commentaire" name="commentaire" placeholder="entrez un commentaire..."></textarea><br> 
+		            <label for="condition">j'accepte</label>
+		            <input id="condition" type="radio" name="condition securite" required><br>
+		            <input id="envoyer" type="submit" name="condition securite" value="envoyer">
+                </p>
+		 	</form>
+		 </fieldset>
+</body>
+</html>
