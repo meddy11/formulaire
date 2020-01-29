@@ -3,15 +3,15 @@
 <head>
 	<title>formulaire</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <fieldset>
 	<legend>CIVILITE</legend>
 	<form method="post" action="traitement.php">
 		<p>
-			<label for="age">votre age 7 a 77</label>
-			<input  id="age" type="number" name="age" placeholder="entre votre age..." max="77" min="7" required>
-			<span>ans</span><br>
+			<label for="age">votre âge 7 a 77 ans</label>
+			<input  id="age" type="number" name="age" placeholder="entre votre age..." max="77" min="7" required><br>
 			<input type="submit" name="ans" value="envoyer">
 		</p>
 		<p>
@@ -58,14 +58,18 @@
 		 </form>
 </fieldset>
 		 <fieldset>
+		 	<label for="commentaire">commentaire</label><br>
+		 		    <textarea rows="10" cols="50" id="commentaire" name="commentaire" placeholder="entrez un commentaire..."></textarea><br>
+		 		    
+		 </fieldset>
 		 	<legend>SECURITE</legend>
 		 	<form>
-		 		<p>
-		 		    <label for="commentaire">commentaire</label><br>
-		 		    <textarea rows="10" cols="50" id="commentaire" name="commentaire" placeholder="entrez un commentaire..."></textarea><br> 
-		            <label for="condition">j'accepte</label>
-		            <input id="condition" type="radio" name="condition securite" required><br>
-		            <input id="envoyer" type="submit" name="condition securite" value="envoyer">
+		 		<p> 
+		 		    <fieldset>
+		 		    	<label for="condition">j'accepte</label>
+		                <input id="condition" type="radio" name="condition securite" required><br>
+		                <input id="envoyer" type="submit" name="condition securite" value="envoyer">
+		 		    </fieldset>  
                 </p>
 		 	</form>
 		 </fieldset>
