@@ -1,0 +1,29 @@
+
+body{
+     margin: auto;
+    color: black;
+    font-size: 30px;
+    width: 40%;
+    border: 30px solid red;
+}
+legend{
+    font-size: 30px;
+}
+fieldset{
+    background-color: yellow;
+}
+form{
+    display: table;
+}
+
+div{
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: auto;
+}
+p{
+
+}
